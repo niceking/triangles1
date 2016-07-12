@@ -6,7 +6,7 @@ int startingAngleDeg = 18;
 int xDisplacement = int((shapeWidth/2) * sin(radians(startingAngleDeg)));
 int yDisplacement = int((shapeWidth/2) * cos(radians(startingAngleDeg)));
 
-void triangleToRectange() {
+void triangleToRectangle() {
   startingAngleDeg++;
   xDisplacement = int((shapeWidth/2) * sin(radians(startingAngleDeg)));
   yDisplacement = int((shapeWidth/2) * cos(radians(startingAngleDeg)));
@@ -40,7 +40,7 @@ void draw() {
   makeShape();
   shape(pentagon, shapeHeight/2 - shapeWidth/2 + margin, margin);
   if (xDisplacement < (shapeWidth/2)) {
-    triangleToRectange();
+    triangleToRectangle();
   }
   else {
     rectangleToPentagon();

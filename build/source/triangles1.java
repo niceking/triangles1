@@ -22,7 +22,7 @@ int startingAngleDeg = 18;
 int xDisplacement = PApplet.parseInt((shapeWidth/2) * sin(radians(startingAngleDeg)));
 int yDisplacement = PApplet.parseInt((shapeWidth/2) * cos(radians(startingAngleDeg)));
 
-public void triangleToRectange() {
+public void triangleToRectangle() {
   startingAngleDeg++;
   xDisplacement = PApplet.parseInt((shapeWidth/2) * sin(radians(startingAngleDeg)));
   yDisplacement = PApplet.parseInt((shapeWidth/2) * cos(radians(startingAngleDeg)));
@@ -52,11 +52,11 @@ public void setup() {
 }
 
 public void draw() {
-  background(192, 64, 0);
+  background(12, 171, 67);
   makeShape();
   shape(pentagon, shapeHeight/2 - shapeWidth/2 + margin, margin);
   if (xDisplacement < (shapeWidth/2)) {
-    triangleToRectange();
+    triangleToRectangle();
   }
   else {
     rectangleToPentagon();
