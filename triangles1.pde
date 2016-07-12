@@ -36,7 +36,7 @@ void setup() {
 }
 
 void draw() {
-  background(192, 64, 0);
+  background(12, 171, 67);
   makeShape();
   shape(pentagon, shapeHeight/2 - shapeWidth/2 + margin, margin);
   if (xDisplacement < (shapeWidth/2)) {
